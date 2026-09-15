@@ -1,6 +1,6 @@
 # The Daily Punch
 
-The Daily Punch is a full-stack joke discovery app. It serves fresh, safe-for-work material from the free [JokeAPI](https://v2.jokeapi.dev/) and lets visitors build a persistent personal archive of favorites.
+The Daily Punch is a full-stack joke discovery app. It serves fresh, unhinged material from the free [JokeAPI](https://v2.jokeapi.dev/) and lets visitors build a persistent personal archive of favorites.
 
 ## Technology
 
