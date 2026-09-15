@@ -1,0 +1,193 @@
+{
+  "version": "8",
+  "dialect": "postgres",
+  "id": "dd4f2b16-dea2-4f1b-85e8-38b141bf7bfc",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "ddl": [
+    {
+      "isRlsEnabled": false,
+      "name": "saved_jokes",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "type": "serial",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "saved_jokes"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "visitor_id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "saved_jokes"
+    },
+    {
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "joke_api_id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "saved_jokes"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "category",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "saved_jokes"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "type",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "saved_jokes"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "setup",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "saved_jokes"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "delivery",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "saved_jokes"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "joke",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "saved_jokes"
+    },
+    {
+      "type": "timestamp with time zone",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "now()",
+      "generated": null,
+      "identity": null,
+      "name": "saved_at",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "saved_jokes"
+    },
+    {
+      "nameExplicit": true,
+      "columns": [
+        {
+          "value": "visitor_id",
+          "isExpression": false,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": null
+        },
+        {
+          "value": "joke_api_id",
+          "isExpression": false,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": null
+        }
+      ],
+      "isUnique": true,
+      "where": null,
+      "with": "",
+      "method": "btree",
+      "concurrently": false,
+      "name": "saved_jokes_visitor_joke_idx",
+      "entityType": "indexes",
+      "schema": "public",
+      "table": "saved_jokes"
+    },
+    {
+      "nameExplicit": true,
+      "columns": [
+        {
+          "value": "visitor_id",
+          "isExpression": false,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": null
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "with": "",
+      "method": "btree",
+      "concurrently": false,
+      "name": "saved_jokes_visitor_idx",
+      "entityType": "indexes",
+      "schema": "public",
+      "table": "saved_jokes"
+    },
+    {
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "name": "saved_jokes_pkey",
+      "schema": "public",
+      "table": "saved_jokes",
+      "entityType": "pks"
+    }
+  ],
+  "renames": []
+}

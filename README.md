@@ -1,0 +1,16 @@
+# The Daily Punch
+
+The Daily Punch is a full-stack joke discovery app. It serves fresh, safe-for-work material from the free [JokeAPI](https://v2.jokeapi.dev/) and lets visitors build a persistent personal archive of favorites.
+
+## Technology
+
+- TanStack Start and React 19
+- Netlify Functions for the public API proxy and favorites endpoints
+- Netlify Database with Drizzle ORM for saved jokes
+- Tailwind CSS tooling with a custom responsive design system
+
+## Local development
+
+Install dependencies with `pnpm install`, then run `netlify dev --port 8889`. Netlify Dev provides the function routing and database environment used by the application. Database migrations in `netlify/database/migrations` are applied by Netlify when deployed.
+
+The JokeAPI integration needs no API key. Safe mode is always enabled by the server-side proxy.
