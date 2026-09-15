@@ -1,3 +1,5 @@
+<img width="1920" height="843" alt="Screenshot 2026-09-15 100132" src="https://github.com/user-attachments/assets/795fbbbc-9153-4da2-9980-90c6b626be86" />
+
 # The Daily Punch
 
 The Daily Punch is a full-stack joke discovery app. It serves fresh, unhinged material from the free [JokeAPI](https://v2.jokeapi.dev/) and lets visitors build a persistent personal archive of favorites.
